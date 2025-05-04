@@ -5,7 +5,7 @@ export const splash = css`
   background-size: cover;
   background-position: center center;
   width: 100dvw;
-  height: 100vh;
+  height: 100dvh;
   padding: 48px 32px;
   display: flex;
   flex-direction: column;

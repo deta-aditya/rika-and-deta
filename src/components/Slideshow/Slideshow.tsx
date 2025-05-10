@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react"
-// import { Image as ImageComponent } from "../Image"
 import * as styles from "./Slideshow.styles";
+
+const SLIDESHOW_DURATION = 5000; // 5 seconds
 
 async function loadImage(url: string) {
   try {
@@ -58,7 +59,7 @@ export const Slideshow = (props: { images: string[] }) => {
 
         return nextValue;
       });
-    }, 5000);
+    }, SLIDESHOW_DURATION);
 
     return () => clearInterval(interval);
   }, [imageUrls.length, props.images.length])

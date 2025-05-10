@@ -23,8 +23,8 @@ async function loadImage(url: string) {
 
 export const Slideshow = (props: { images: string[] }) => {
   const loadingInitiated = useRef<boolean>(false);
-  const [current, setCurrent] = useState(0);
-  const [next, setNext] = useState(1);
+  const [current, setCurrent] = useState(-1);
+  const [next, setNext] = useState(0);
   const [displayNext, setDisplayNext] = useState(false);
   const [imageUrls, setImageUrls] = useState<string[]>([]);
 
@@ -32,6 +32,20 @@ export const Slideshow = (props: { images: string[] }) => {
     props.images.forEach(image => {
       loadImage(image)
         .then(imageUrl => setImageUrls(prev => [...prev, imageUrl]));
+    });
+  }
+
+  const transitionImage = () => {
+    setDisplayNext(prev => {
+      const nextValue = !prev
+
+      if (nextValue) {
+        setNext((prev) => (prev + 2) % props.images.length);
+      } else {
+        setCurrent((prev) => (prev + 2) % props.images.length);
+      }
+
+      return nextValue;
     });
   }
 
@@ -47,27 +61,25 @@ export const Slideshow = (props: { images: string[] }) => {
       return;
     }
 
-    const interval = setInterval(() => {
-      setDisplayNext(prev => {
-        const nextValue = !prev
+    const timeout = setTimeout(transitionImage, 10);
+    const interval = setInterval(transitionImage, SLIDESHOW_DURATION);
 
-        if (nextValue) {
-          setNext((prev) => (prev + 2) % props.images.length);
-        } else {
-          setCurrent((prev) => (prev + 2) % props.images.length);
-        }
+    return () => {
+      clearTimeout(timeout);
+      clearInterval(interval);
+    }
+  }, [imageUrls.length, props.images.length]);
 
-        return nextValue;
-      });
-    }, SLIDESHOW_DURATION);
-
-    return () => clearInterval(interval);
-  }, [imageUrls.length, props.images.length])
+  const displayImages = imageUrls.length === props.images.length;
 
   return (
     <div css={styles.slideshow}>
-      <img css={styles.imageCurrent(displayNext)} src={imageUrls[current]} alt="slideshow-img" />
-      <img css={styles.imageNext(displayNext)} src={imageUrls[next]} alt="slideshow-img" />
+      {displayImages && (
+        <>
+          <img css={styles.imageCurrent(displayNext)} src={imageUrls[current]} />
+          <img css={styles.imageNext(displayNext)} src={imageUrls[next]} />
+        </>
+      )}
     </div>
   )
 }

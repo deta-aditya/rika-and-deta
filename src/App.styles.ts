@@ -1,16 +1,16 @@
 import { css } from "@emotion/react";
 
 export const splash = css`
-  background-image: url('splash0.jpg');
-  background-size: cover;
-  background-position: center center;
+  /* background-image: url('splash0.jpg'); */
+  
   width: 100dvw;
   height: 100dvh;
-  padding: 48px 32px;
+  padding: 48px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 
   .header {
     display: flex;
@@ -19,8 +19,7 @@ export const splash = css`
 
     .wedding-date {
       margin-top: 4px;
-      font-size: 20px;
+      font-size: 18px;
     }
   }
-
 `;

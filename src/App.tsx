@@ -1,11 +1,29 @@
-import * as styles from './App.styles'
-import { Button } from './components/Button'
+import { useEffect, useState } from 'react'
 import { Slideshow } from './components/Slideshow/Slideshow'
-import { Title } from './components/Title'
+import { Splash } from './screens/Splash'
+import { Invitation, OpenedInvitation } from './models/Invitation'
+import * as styles from './App.styles'
+import { Main } from './screens/Main'
+
+const INVITATION_KEY_LS = 'rika-deta-invitation'
+
+const INVITATION_VALUE_LS = Invitation.unserialize(
+  localStorage.getItem(INVITATION_KEY_LS) || ''
+);
 
 function App() {
+  const [invitation, setInvitation] = useState<Invitation>(INVITATION_VALUE_LS);
+
+  const handleOpenInvitation = () => {
+    setInvitation(new OpenedInvitation());
+  }
+
+  useEffect(() => {
+    localStorage.setItem(INVITATION_KEY_LS, invitation.serialize());
+  }, [invitation])
+
   return (
-    <main css={styles.splash}>
+    <main css={styles.app}>
       <Slideshow 
         images={[
           "splash0.jpg",
@@ -16,12 +34,11 @@ function App() {
           "splash5.jpg",
         ]}
       />
-      <header className='header'>
-        <span className='wedding-of-text'>The wedding of</span>
-        <Title />
-        <span className='wedding-date'>Sunday, 15 June 2025</span>
-      </header>
-      <Button>Open Invitation</Button>
+      {invitation.visit({
+        notOpened: () => <Splash onOpenInvitationClick={handleOpenInvitation} />,
+        opened: () => <Main />
+      })}
+      
     </main>
   )
 }

@@ -14,7 +14,7 @@ export const main = css`
     }
   };
 
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.4);
   color: #fff;
   width: 100dvw;
   height: 100dvh;

@@ -37,7 +37,7 @@ export const main = css`
   }
 
   .wedding-date {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .top-apps {
@@ -90,16 +90,19 @@ export const main = css`
     .location {
       background-image: url("location-icon.png");
       background-size: cover;
+      background-position: center;
     }
     
     .support {
       background-image: url("support-icon.png");
       background-size: cover;
+      background-position: center;
     }
 
     .gallery {
       background-image: url("gallery-icon.png");
       background-size: cover;
+      background-position: center;
     }
   }
 `;

@@ -12,6 +12,7 @@ const INVITATION_VALUE_LS = Invitation.unserialize(
 );
 
 function App() {
+  const [fontLoaded, setFontLoaded] = useState(false);
   const [invitation, setInvitation] = useState<Invitation>(INVITATION_VALUE_LS);
 
   const handleOpenInvitation = () => {
@@ -20,7 +21,17 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem(INVITATION_KEY_LS, invitation.serialize());
-  }, [invitation])
+  }, [invitation]);
+
+  useEffect(() => {
+    document.fonts.ready.then(() => {
+      setFontLoaded(true);
+    });
+  }, []);
+
+  if (!fontLoaded) {
+    return null;
+  }
 
   return (
     <main css={styles.app}>

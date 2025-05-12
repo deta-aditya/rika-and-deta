@@ -81,7 +81,7 @@ export const main = css`
 
   .bottom-apps {
     display: flex;
-    gap: 16px;
+    gap: 24px;
 
     article {
       flex: 1;

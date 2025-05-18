@@ -35,7 +35,7 @@ const ModalBody = () => {
         <p>With heartfelt gratitude, we invite you to celebrate the beginning of <span className="couple-names">Rika's & Deta's</span> new journey together.</p>
         <p>Please join us in:</p>
         <ul className="location-and-time">
-          <li>📌 Jl. Swadaya 1 No. 40, Kab. Banyuasin, Sumatera Selatan</li>
+          <li>📌 Rika's Residence - Jl. Swadaya 1 No. 40, Kab. Banyuasin, Sumatera Selatan</li>
           <li>⏲️ Sunday, 15 June 2025, at 10:00 AM - Done</li>
         </ul>
         <p>We look forward to celebrating with you at our reception. Feel free to explore this website for more info!</p>

@@ -114,18 +114,18 @@ export const main = css`
 export const invitationModal = css`
   padding: 16px;
   background-image: url('invitation-bg.png');
-  background-position: 8px 8px;
+  background-position: 0px 0px;
   background-size: 150px;
   background-repeat: no-repeat;
   position: relative;
-  font-size: 11px;
+  font-size: 12px;
   color: #b9b9b9;
 
   .outer-border {
     position: absolute;
-    margin: 24px;
-    width: calc(100% - 48px);
-    height: calc(100% - 48px);
+    margin: 20px;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
     top: 0;
     left: 0;
     border: 0.5px solid #e2b43899;
@@ -138,7 +138,7 @@ export const invitationModal = css`
     border-radius: 16px;
     padding: 16px;
     background-image: linear-gradient(#0d0d0d, #212121);
-    margin: 24px;
+    margin: 18px;
   }
 
   .salutation {
@@ -167,6 +167,6 @@ export const invitationModal = css`
 
 export const ourStoryModal = css`
   padding: 16px;
-  font-size: 11px;
+  font-size: 12px;
   color: #b9b9b9;
 `;

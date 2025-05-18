@@ -60,7 +60,7 @@ export const modal = (display: boolean) => css`
     animation: fadeOut 0.25s ease-in; 
 
     .dialog {
-      animation: scaleIn 0.25s ease-out; 
+      animation: scaleIn 0.25s ease-in; 
     }
   }
 

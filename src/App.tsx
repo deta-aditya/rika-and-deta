@@ -49,7 +49,6 @@ function App() {
         notOpened: () => <Splash onOpenInvitationClick={handleOpenInvitation} />,
         opened: () => <Main />
       })}
-      
     </main>
   )
 }

@@ -1,7 +1,7 @@
 import { css } from "@emotion/react";
 
 export const main = css`
-  @keyframes fadeIn {
+  @keyframes fadeInScale {
     from { 
       opacity: 0; 
       transform: scale(1.5); 
@@ -16,13 +16,17 @@ export const main = css`
 
   background-color: rgba(0,0,0,0.4);
   color: #fff;
-  width: 100dvw;
-  height: 100dvh;
-  padding: 24px;
-  animation: fadeIn 0.5s ease-out;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  animation: fadeInScale 0.5s ease-out;
+  position: relative;
+  
+  .content {
+    padding: 24px;
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   .header {
     display: flex;
@@ -37,7 +41,7 @@ export const main = css`
   }
 
   .wedding-date {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .top-apps {
@@ -105,4 +109,64 @@ export const main = css`
       background-position: center;
     }
   }
+`;
+
+export const invitationModal = css`
+  padding: 16px;
+  background-image: url('invitation-bg.png');
+  background-position: 8px 8px;
+  background-size: 150px;
+  background-repeat: no-repeat;
+  position: relative;
+  font-size: 11px;
+  color: #b9b9b9;
+
+  .outer-border {
+    position: absolute;
+    margin: 24px;
+    width: calc(100% - 48px);
+    height: calc(100% - 48px);
+    top: 0;
+    left: 0;
+    border: 0.5px solid #e2b43899;
+    border-radius: 16px;
+    z-index: -1;
+  }
+
+  .inner-border {
+    border: 1px solid #e2b438;
+    border-radius: 16px;
+    padding: 16px;
+    background-image: linear-gradient(#0d0d0d, #212121);
+    margin: 24px;
+  }
+
+  .salutation {
+    margin-bottom: 0;
+  }
+
+  .location-and-time {
+    padding-left: 10px;
+    color: #fff;
+    
+    li:not(:first-of-type) {
+      margin-top: 8px;
+    }
+  }
+
+  .guest-name {
+    color: #fff;
+    margin-top: 0;
+    font-size: 16px;
+  }
+
+  .couple-names {
+    color: #fff;
+  }
+`;
+
+export const ourStoryModal = css`
+  padding: 16px;
+  font-size: 11px;
+  color: #b9b9b9;
 `;

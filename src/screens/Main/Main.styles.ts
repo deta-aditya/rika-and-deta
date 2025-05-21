@@ -170,4 +170,10 @@ export const ourStoryModal = css`
   padding: 16px;
   font-size: 12px;
   color: #b9b9b9;
+
+  img {
+    width: 100%;
+    border-radius: 16px;
+    border: 2px solid #333;
+  }
 `;

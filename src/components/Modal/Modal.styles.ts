@@ -75,6 +75,8 @@ export const modal = (display: boolean) => css`
   .dialog {
     border-radius: 16px;
     background-image: linear-gradient(#0d0d0d, #212121);
+    border: 1px solid #333;
+    box-shadow: 0 0 8px 4px #00000066;
     width: 85dvw;
     position: relative;
     z-index: 10;
@@ -91,6 +93,11 @@ export const modal = (display: boolean) => css`
     .dialog-title {
       text-align: center;
       flex: 1;
+    }
+
+    .dialog-body {
+      max-height: 80dvh;
+      overflow-y: scroll;
     }
     
     .close-button {

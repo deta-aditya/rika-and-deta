@@ -24,7 +24,7 @@ export const Modal = () => {
                   <button className="close-button" onClick={closeModal}>&times;</button>
                 </header>
               )}
-              <main>{payload.body}</main>
+              <main className="dialog-body">{payload.body}</main>
             </article>
           </>
         ),

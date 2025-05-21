@@ -63,16 +63,17 @@ export const main = css`
         gap: 4px;
 
         .guest-title {
-          font-size: 12px;
+          font-size: 10px;
         }
 
         .guest-name {
-          font-size: 18px;
+          font-weight: bold;
+          font-size: 14px;
         }
       }
 
       .thank-you {
-        font-size: 12px;
+        font-size: 11px;
         line-height: 125%;
       }
     }

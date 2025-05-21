@@ -1,6 +1,9 @@
 import { AppButton } from "../../../components/AppButton"
 import { useModalContext } from "../../../contexts/ModalContext";
+import { GUEST_KEY } from "../../../models/Guest";
 import * as styles from "../Main.styles";
+
+const guest = new URLSearchParams(window.location.search).get(GUEST_KEY) || 'John Doe';
 
 export const InvitationLetter = () => {
   const { openModal } = useModalContext();
@@ -16,7 +19,7 @@ export const InvitationLetter = () => {
     <AppButton buttonClassName="invitation-letter" title="Invitation Letter" onClick={handleClick}>
       <div className="guest-info">
         <span className="guest-title">Dear Mr/Mrs/Ms.</span>
-        <span className="guest-name">John Doe</span>
+        <span className="guest-name">{guest}</span>
       </div>
       <span className="thank-you">Thank you for accepting our invitation.</span>
     </AppButton>
@@ -31,11 +34,11 @@ const ModalBody = () => {
       <div className="outer-border" />
       <div className="inner-border">
         <p className="salutation">Dear Mr/Mrs/Ms.</p>
-        <p className="guest-name">John Doe</p>
+        <p className="guest-name">{guest}</p>
         <p>With heartfelt gratitude, we invite you to celebrate the beginning of <span className="couple-names">Rika's & Deta's</span> new journey together.</p>
         <p>Please join us in:</p>
         <ul className="location-and-time">
-          <li>📌 Rika's Residence - Jl. Swadaya 1 No. 40, Kab. Banyuasin, Sumatera Selatan</li>
+          <li>📌 Bride's Residence - Jl. Swadaya 1 No. 40, Kab. Banyuasin, Sumatera Selatan</li>
           <li>⏲️ Sunday, 15 June 2025, at 10:00 AM - Done</li>
         </ul>
         <p>We look forward to celebrating with you at our reception. Feel free to explore this website for more info!</p>

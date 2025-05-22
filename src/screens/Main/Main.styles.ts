@@ -159,6 +159,7 @@ export const invitationModal = css`
     color: #fff;
     margin-top: 0;
     font-size: 16px;
+    font-weight: bold;
   }
 
   .couple-names {

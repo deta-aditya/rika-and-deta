@@ -182,3 +182,27 @@ export const ourStoryModal = css`
     border-color: #333;
   }
 `;
+
+export const locationModal = css`
+  height: 60dvh;
+  position: relative;
+
+  .leaflet-container {
+    height: 60dvh;
+    border-radius: 0 0 16px 16px;
+  }
+
+  .leaflet-control-attribution {
+    display: none;
+  }
+
+  .button-container {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    bottom: 32px;
+    left: 0;
+  }
+`;

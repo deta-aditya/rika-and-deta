@@ -2,6 +2,7 @@ import { AppButton } from "../../components/AppButton/AppButton";
 import { Modal } from "../../components/Modal";
 import { Title } from "../../components/Title";
 import { InvitationLetter } from "./components/InvitationLetter";
+import { Location } from "./components/Location";
 import { OurStory } from "./components/OurStory";
 import { WeddingDate } from "./components/WeddingDate";
 import * as styles from "./Main.styles";
@@ -21,7 +22,7 @@ export const Main = () => {
           </section>
         </header>
         <footer className="bottom-apps">
-          <AppButton buttonClassName="location" title="Location" />
+          <Location />
           <AppButton buttonClassName="support" title="Support" />
           <AppButton buttonClassName="gallery" title="Gallery" />
           <AppButton title="WIP" />

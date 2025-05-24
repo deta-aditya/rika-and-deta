@@ -172,15 +172,15 @@ export const ourStoryModal = css`
   font-size: 12px;
   color: #b9b9b9;
 
-  img {
-    width: 100%;
-    border-radius: 16px;
-    border: 2px solid #333;
-  }
-
   hr {
     border-color: #333;
   }
+`;
+
+export const ourStoryImg = css`
+  width: 100%;
+  border-radius: 16px;
+  border: 2px solid #333;
 `;
 
 export const locationModal = css`
@@ -219,4 +219,15 @@ export const supportModal = css`
     margin: 4px;
     text-align: center;
   }
+`;
+
+export const galleryModal = css`
+  padding: 8px 8px 16px;
+  display: grid;
+  gap: 4px;
+  grid-template-columns: repeat(3, 1fr);
+`;
+
+export const galleryImage = css`
+  aspect-ratio: 1;
 `;

@@ -177,4 +177,8 @@ export const ourStoryModal = css`
     border-radius: 16px;
     border: 2px solid #333;
   }
+
+  hr {
+    border-color: #333;
+  }
 `;

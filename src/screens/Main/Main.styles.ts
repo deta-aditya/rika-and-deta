@@ -73,7 +73,7 @@ export const main = css`
       }
 
       .thank-you {
-        font-size: 11px;
+        font-size: 12px;
         line-height: 125%;
       }
     }
@@ -115,7 +115,7 @@ export const main = css`
 export const invitationModal = css`
   padding: 16px;
   background-image: url('invitation-bg.png');
-  background-position: 0px 0px;
+  background-position: 4px 4px;
   background-size: 150px;
   background-repeat: no-repeat;
   position: relative;
@@ -204,5 +204,19 @@ export const locationModal = css`
     justify-content: center;
     bottom: 32px;
     left: 0;
+  }
+`;
+
+export const supportModal = css`
+  padding: 16px 32px;
+  font-size: 12px;
+  color: #b9b9b9;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  p {
+    margin: 4px;
+    text-align: center;
   }
 `;

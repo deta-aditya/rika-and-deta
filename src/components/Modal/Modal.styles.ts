@@ -87,12 +87,12 @@ export const modal = (display: boolean) => css`
       border-bottom: 1px solid #323232;
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: baseline;
     }
 
     .dialog-title {
-      text-align: center;
       flex: 1;
+      font-weight: bold;
     }
 
     .dialog-body {
@@ -105,6 +105,7 @@ export const modal = (display: boolean) => css`
       border: none;
       color: #fff;
       font-size: 18px;
+      padding: 0 4px;
     }
   }
 `;

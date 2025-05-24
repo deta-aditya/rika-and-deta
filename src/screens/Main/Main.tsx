@@ -4,6 +4,7 @@ import { Title } from "../../components/Title";
 import { InvitationLetter } from "./components/InvitationLetter";
 import { Location } from "./components/Location";
 import { OurStory } from "./components/OurStory";
+import { Support } from "./components/Support";
 import { WeddingDate } from "./components/WeddingDate";
 import * as styles from "./Main.styles";
 
@@ -23,7 +24,7 @@ export const Main = () => {
         </header>
         <footer className="bottom-apps">
           <Location />
-          <AppButton buttonClassName="support" title="Support" />
+          <Support />
           <AppButton buttonClassName="gallery" title="Gallery" />
           <AppButton title="WIP" />
         </footer>

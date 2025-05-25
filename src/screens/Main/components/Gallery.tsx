@@ -1,7 +1,8 @@
 import { AppButton } from "../../../components/AppButton";
 import { Image } from "../../../components/Image";
-import { useImagePreviewContext } from "../../../contexts/ImagePreviewContext";
+import { useMediaPreviewContext } from "../../../contexts/MediaPreviewContext";
 import { useModalContext } from "../../../contexts/ModalContext";
+import { Media } from "../../../models/Media";
 import * as styles from "../Main.styles";
 
 const IMAGE_LIST = Array.from({ length: 24 }, (_, i) => i + 1).map(i => ({
@@ -24,10 +25,10 @@ export const Gallery = () => {
 }
 
 const ModalBody = () => {
-  const { openImage } = useImagePreviewContext();
+  const { openMedia: openImage } = useMediaPreviewContext();
 
   const handleClickImage = (original: string) => {
-    openImage(original);
+    openImage(Media.image(original));
   }
 
   return (

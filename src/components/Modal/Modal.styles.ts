@@ -82,7 +82,7 @@ export const modal = (display: boolean) => css`
     z-index: 10;
 
     .dialog-header {
-      padding: 16px;
+      padding: 12px 16px;
       font-size: 14px;
       border-bottom: 1px solid #323232;
       display: flex;
@@ -92,6 +92,7 @@ export const modal = (display: boolean) => css`
 
     .dialog-title {
       flex: 1;
+      font-size: 16px;
       font-weight: bold;
     }
 
@@ -104,7 +105,7 @@ export const modal = (display: boolean) => css`
       background-color: transparent;
       border: none;
       color: #fff;
-      font-size: 18px;
+      font-size: 24px;
       padding: 0 4px;
     }
   }

@@ -1,11 +1,11 @@
-import { AppButton } from "../../components/AppButton/AppButton";
-import { ImagePreview } from "../../components/ImagePreview";
+import { MediaPreview } from "../../components/MediaPreview";
 import { Modal } from "../../components/Modal";
 import { Title } from "../../components/Title";
 import { Gallery } from "./components/Gallery";
 import { InvitationLetter } from "./components/InvitationLetter";
 import { Location } from "./components/Location";
 import { OurStory } from "./components/OurStory";
+import { PlayVideo } from "./components/PlayVideo";
 import { Support } from "./components/Support";
 import { WeddingDate } from "./components/WeddingDate";
 import * as styles from "./Main.styles";
@@ -28,11 +28,11 @@ export const Main = () => {
           <Location />
           <Support />
           <Gallery />
-          <AppButton title="WIP" />
+          <PlayVideo />
         </footer>
       </section>
       <Modal />
-      <ImagePreview />
+      <MediaPreview />
     </section>
   );
 }

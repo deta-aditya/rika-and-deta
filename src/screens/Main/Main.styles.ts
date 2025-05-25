@@ -109,6 +109,12 @@ export const main = css`
       background-size: cover;
       background-position: center;
     }
+
+    .play-video {
+      background-image: url("video-icon.png");
+      background-size: cover;
+      background-position: center;
+    }
   }
 `;
 

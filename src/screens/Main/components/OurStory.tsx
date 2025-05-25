@@ -62,10 +62,18 @@ const ModalBody = () => {
       <p>Deta went to pick up Rika at the airport. It was in the evening, when Deta was supposed to work. His manager allowed him to go, and go he did. Rika eventually landed and met Deta. We hailed an online taxi to Rika's friend's place.</p>
       <p>The trip was only about an hour, but that moment was very memorable. Rika was dazzled by the sparkling night of Jakarta. Deta thought it was adorable, probably reminded him of his first impression as well. Rika fell asleep on Deta's shoulder during the trip, but quickly got interrupted as we arrived at the destination.</p>
       <p>After we met Rika's friends, Deta left not long after. He wanted to stay for a bit longer, but he had been missing from the office for quite awhile.</p>
-      <p>At this moment we probably underestimated the weight of the future ahead of us. Little that we know of what's coming next.</p>
+      <p>At this moment we probably underestimated the weight of the future. Little that we know of what's coming next.</p>
       <hr />
       <p>2020, onwards,</p>
       <p>The COVID 19 pandemics stormed the world.</p>
+      <p>The government set a total lockdown to the whole country, restricting everyone from traveling. This was a bad news for both of us, as there is no way we could meet as easy as before, anymore.</p>
+      <p>We sadly went silent again. Things seemed to reset to 2015 where our chat was infrequent. The uncertainity of the future was really scary.</p>
+      <p>Fortunately, as the pandemic regulation started to relax, We were able to travel again. Deta's job at that time regulated him to go to Jakarta each month - as during the pandemic he was forced to go home to Bandung the whole time, and Rika sometimes had to go out the city for a business trip.</p>
+      <p>There was a near perfect time where Rika had to go to Jakarta, but it didn't fit with Deta's schedule. However, Deta decided he would go to Jakarta again on Rika's schedule. We planned for a meetup afterwards.</p>
+      <p>But this time, it wasn't just a meetup.</p>
+      <p>It was a date.</p>
+      <hr />
+      <p>Jakarta, November 2023,</p>
     </div>
   )
 }

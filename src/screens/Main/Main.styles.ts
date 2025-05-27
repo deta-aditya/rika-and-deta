@@ -237,3 +237,44 @@ export const galleryModal = css`
 export const galleryImage = css`
   aspect-ratio: 1;
 `;
+
+export const weddingDate = css`
+  @keyframes slideUp {
+    0% {
+      transform: translateY(20px);
+    }
+
+    3%, 50% {
+      transform: translateY(0);
+    }
+
+    53% {
+      transform: translateY(-20px);
+    }
+  }
+
+  overflow: hidden;
+  position: relative;
+  width: fit-content;
+  flex: 1;
+  height: 15px;
+
+  .exact-date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: slideUp 14s ease-in-out;
+    animation-iteration-count: infinite;
+    transform: translateY(-20px);
+  }
+
+  .countdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: slideUp 14s ease-in-out;
+    animation-delay: 7s;
+    animation-iteration-count: infinite;
+    transform: translateY(-20px);
+  }
+`;

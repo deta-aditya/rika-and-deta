@@ -73,7 +73,8 @@ const ModalBody = () => {
       <p>But this time, it wasn't just a meetup.</p>
       <p>It was a date.</p>
       <hr />
-      <p>Jakarta, November 2023,</p>
+      <p>Jakarta, November 2022,</p>
+      <p></p>
     </div>
   )
 }

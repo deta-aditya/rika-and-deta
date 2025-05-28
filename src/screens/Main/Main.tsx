@@ -1,6 +1,7 @@
 import { MediaPreview } from "../../components/MediaPreview";
 import { Modal } from "../../components/Modal";
 import { Title } from "../../components/Title";
+import { BackgroundMusic } from "./components/BackgroundMusic";
 import { Gallery } from "./components/Gallery";
 import { InvitationLetter } from "./components/InvitationLetter";
 import { Location } from "./components/Location";
@@ -33,6 +34,7 @@ export const Main = () => {
       </section>
       <Modal />
       <MediaPreview />
+      <BackgroundMusic />
     </section>
   );
 }

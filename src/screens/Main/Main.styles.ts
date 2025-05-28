@@ -278,3 +278,7 @@ export const weddingDate = css`
     transform: translateY(-20px);
   }
 `;
+
+export const backgroundMusic = css`
+  display: none;
+`;

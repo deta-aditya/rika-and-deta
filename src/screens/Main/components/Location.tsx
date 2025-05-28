@@ -35,6 +35,7 @@ const ModalBody = () => {
         <Marker position={LOCATION_COORDINATE}>
           <Popup>
             <strong>👰 Bride's Residence,<br /></strong>
+            (HomeFun English Course)<br />
             Jl. Swadaya 1 No. 40, <br />
             Kab. Banyuasin, Sumatera Selatan
           </Popup>

@@ -26,7 +26,7 @@ export const BackgroundMusic = () => {
     if (!audio) return;
 
     if (!media && audio.paused) {
-      audio.play();
+      audio.play().catch(() => {});
       return;
     }
 

@@ -35,6 +35,7 @@ const ModalBody = () => {
       <p>November 2014,</p>
       <p>We were separated by 675 km, across two islands, divided by the Sunda Strait. But we still looked up at the same sky, thankfully. The internet also helped us stay connected.</p>
       <p>Several social media platforms popular at the time—BBM, Facebook, Twitter, and Ask.fm—kept us in touch. We also video called each other on Skype now and then. The picture quality wasn’t as clear as today’s technology, but it was enough.</p>
+      <Image css={styles.ourStoryImg} src="our-story3.webp" alt="The bus moment" />
       <p>Deta shared a recording of himself singing "All of Me" to Rika. At this point, it was clear we had developed a crush on each other. It was beautiful, yet sad, since we couldn’t meet in person.</p>
       <p>Rika then shared with Deta that she wanted to go to Melbourne. She had dreamed of being there as a debater ever since she was introduced to the Australian Parliamentary Debate format. Deta promised that one day, we would visit the city together. This youthful dream bound us tightly—even until now.</p>
       <p>We enjoyed our time together. If only we knew that the hurricane of love we were rejoicing in would soon begin to fade.</p>

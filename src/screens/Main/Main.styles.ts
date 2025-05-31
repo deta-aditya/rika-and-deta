@@ -75,12 +75,16 @@ export const main = css`
         gap: 4px;
 
         .guest-title {
-          font-size: 10px;
+          font-size: 14px;
+
+          @media (width <= 480px) {
+            font-size: 10px;
+          }
         }
 
         .guest-name {
           font-weight: bold;
-          font-size: 16px;
+          font-size: 18px;
 
           @media (width <= 480px) {
             font-size: 14px;
@@ -93,8 +97,12 @@ export const main = css`
       }
 
       .thank-you {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 125%;
+
+        @media (width <= 480px) {
+          font-size: 12px;
+        }
 
         @media (width <= 360px) {
           font-size: 10px;

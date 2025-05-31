@@ -83,19 +83,31 @@ const ModalBody = () => {
       <p>We went on a date at Central Park, Jakarta.</p>
       <p>Once we met, we walked around the mall. Our conversation was unlike anything before. We talked about long-term goals, incomes, values, and more.</p>
       <p>Eventually, we found a place to eat. It’s funny—we were still a little awkward. We were very conscious of our gestures, as if one wrong move could ruin everything.</p>
-      <Image css={styles.ourStoryImg} src="our-story8.jpg" alt="Central park" />
+      <Image css={styles.ourStoryImg} src="our-story8.png" alt="Central park" />
       <p>The date was short, but it was a crucial milestone for us.</p>
       <p>Afterward, we talked about the next step. We decided to try a serious relationship. But since Rika had to return to Palembang and Deta to Bandung, it would once again be long-distance.</p>
       <p>We had to proceed with care.</p>
       <hr />
       <p>2023 onwards,</p>
       <p>It wasn’t always smooth sailing, but we kept going until we were comfortable calling ourselves a couple. Then, we set long-term goals. This time, we planned everything carefully and didn’t underestimate the future.</p>
-      <p>The first step: saving some of our earnings. Second: getting our parents to meet and arranging our engagement. Third: planning our wedding. Turns out, everything could be done within two to three years. Optimistically, we moved forward.</p>
+      <p>The first step was saving some of our earnings. The second was getting our parents to meet and arranging our engagement. Third came planning our pre-wedding shots. And fourth, the grand event itself—the wedding. As it turned out, everything could be done within two to three years. Optimistically, we moved forward.</p>
       <p>A lot happened in that time. Deta switched jobs suddenly. Rika’s job shifted in unexpected ways, reducing how often we could meet. It was turbulent—but we never lost sight of our goals.</p>
-      <p>For our pre-wedding shoot, we chose to return to where it all began—Malang. A perfect place to reminisce. We went the extra mile with a Bromo tour, cinematic shots, and enjoying the beauty of the Tengger mountain range.</p>
-      <Image css={styles.ourStoryImg} src="our-story9.JPG" alt="Bromo mountains" />
+      <hr />
+      <p>Jakarta, October 2024</p>
+      <p>Rika had completed her Master’s degree, and the graduation ceremony was held in Jakarta. Deta came to accompany Rika and her parents and to take some commemorative photos together.</p>
+      <p>It was also the day our parents met for the first time—and the day we got engaged.</p>
+      <Image css={styles.ourStoryImg} src="our-story9.jpeg" alt="Engagement commemorative picture" />
+      <p>We arranged a simple yet formal dinner at a restaurant in Central Jakarta and booked hotel rooms for our parents to stay overnight. During the dinner, we exchanged rings to mark the next step in our relationship.</p>
+      <p>Our wedding was set to take place eight months after that day.</p>
+      <hr />
+      <p>Malang, January 2025</p>
+      <p>For our pre-wedding shoot, we chose to return to where it all began—Malang.</p>
+      <p>A perfect place to reminisce.</p> 
+      <Image css={styles.ourStoryImg} src="our-story10.JPG" alt="Bromo mountains" />
+      <p>We went the extra mile with a Bromo tour, cinematic shots, and enjoying the beauty of the Tengger mountain range.</p>
+      <p></p>
       <p>Eventually, our plans were nearly complete. It felt so rewarding to see everything fall into place despite the challenges. The countdown to our wedding went from years, to months, to weeks.</p>
-      <p>After 10 years, the two students who once faced each other in a national debate competition—are now getting married.</p>
+      <p>After 11 years, the two students who once faced each other in a national debate competition—are now getting married.</p>
       <hr />
       <p>The story doesn’t end here. In fact, this is just the prologue.</p>
       <p>The real story begins when we truly become husband and wife. ❤️</p>

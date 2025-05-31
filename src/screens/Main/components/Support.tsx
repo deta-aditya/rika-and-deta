@@ -28,7 +28,7 @@ const ModalBody = () => {
       />
       <Copyable 
         label="BSI, Rika Carolina"
-        content="7210896478"
+        content="7302105728"
       />
       <p>May God bless you abundantly. Aamiin. 🤲</p>
     </div>

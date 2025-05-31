@@ -75,9 +75,9 @@ export const main = css`
         gap: 4px;
 
         .guest-title {
-          font-size: 14px;
+          font-size: 12px;
 
-          @media (width <= 480px) {
+          @media (width <= 400px) {
             font-size: 10px;
           }
         }
@@ -86,7 +86,7 @@ export const main = css`
           font-weight: bold;
           font-size: 18px;
 
-          @media (width <= 480px) {
+          @media (width <= 400px) {
             font-size: 14px;
           }
 
@@ -100,7 +100,7 @@ export const main = css`
         font-size: 14px;
         line-height: 125%;
 
-        @media (width <= 480px) {
+        @media (width <= 400px) {
           font-size: 12px;
         }
 
@@ -299,6 +299,7 @@ export const weddingDate = css`
   height: 20px;
 
   @media (width <= 400px) {
+    height: 16px;
     font-size: 15px;
   }
 
@@ -338,4 +339,45 @@ export const hiddenTitleModal = css`
   .rika-click-area, .deta-click-area {
     flex: 1;
   }
+`;
+
+export const countdownModal = css`
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
+  @media (width <= 400px) {
+    gap: 16px;
+  }
+
+  .time-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    .time-unit-value {
+      font-size: 48px;
+
+      @media (width <= 400px) {
+        font-size: 36px;
+      }
+
+      font-family: "Space Mono", monospace;
+    }
+
+    .time-unit-label {
+      font-size: 14px;
+
+      @media (width <= 400px) {
+        font-size: 11px;
+      }
+
+      margin-bottom: 8px;
+    }
+  }
+
+
+  
 `;

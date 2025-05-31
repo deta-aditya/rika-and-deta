@@ -325,3 +325,17 @@ export const weddingDate = css`
 export const backgroundMusic = css`
   display: none;
 `;
+
+export const hiddenTitleModal = css`
+  background-image: url('splash1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0 0 16px 16px;
+  height: 80dvh;
+  display: flex;
+
+  .rika-click-area, .deta-click-area {
+    flex: 1;
+  }
+`;

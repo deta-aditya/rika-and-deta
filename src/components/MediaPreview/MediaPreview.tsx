@@ -20,7 +20,7 @@ export const MediaPreview = () => {
       {media.visitByType({
         image: (url) => <img src={url} alt={`img-preview-of-${media}`} />,
         video: (url) => (
-          <video controls>
+          <video controls autoPlay>
             <source src={url} />
           </video>
         )

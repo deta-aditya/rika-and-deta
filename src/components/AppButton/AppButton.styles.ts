@@ -17,5 +17,9 @@ export const appButton = css`
   .title {
     font-size: 12px;
     text-align: center;
+
+    @media (width <= 360px) {
+      font-size: 10px;
+    }
   }
 `;

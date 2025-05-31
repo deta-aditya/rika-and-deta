@@ -18,10 +18,13 @@ export const main = css`
   color: #fff;
   animation: fadeInScale 0.5s ease-out;
   position: relative;
+  width: 100dvw;
+  max-width: 500px;
   
   .content {
     padding: 24px;
     width: 100dvw;
+    max-width: 500px;
     height: 100dvh;
     display: flex;
     flex-direction: column;
@@ -41,7 +44,15 @@ export const main = css`
   }
 
   .wedding-date {
-    font-size: 12px;
+    font-size: 16px;
+
+    @media (width <= 400px) {
+      font-size: 14px;
+    }
+
+    @media (width <= 360px) {
+      font-size: 11px;
+    }
   }
 
   .top-apps {
@@ -56,6 +67,7 @@ export const main = css`
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      gap: 12px;
 
       .guest-info {
         display: flex;
@@ -68,28 +80,47 @@ export const main = css`
 
         .guest-name {
           font-weight: bold;
-          font-size: 14px;
+          font-size: 16px;
+
+          @media (width <= 480px) {
+            font-size: 14px;
+          }
+
+          @media (width <= 360px) {
+            font-size: 12px;
+          }
         }
       }
 
       .thank-you {
         font-size: 12px;
         line-height: 125%;
+
+        @media (width <= 360px) {
+          font-size: 10px;
+        }
       }
     }
 
     .our-story {
       background-image: url('our-story.jpg');
+      background-position: center;
       background-size: cover;
     }
   }
 
   .bottom-apps {
     display: flex;
-    gap: 24px;
+    justify-content: center;
+    gap: 36px;
+
+    @media (width <= 400px) {
+      gap: 24px;
+    }
 
     article {
       flex: 1;
+      max-width: 75px;
     }
 
     .location {
@@ -241,7 +272,7 @@ export const galleryImage = css`
 export const weddingDate = css`
   @keyframes slideUp {
     0% {
-      transform: translateY(20px);
+      transform: translateY(25px);
     }
 
     3%, 50% {
@@ -249,7 +280,7 @@ export const weddingDate = css`
     }
 
     53% {
-      transform: translateY(-20px);
+      transform: translateY(-25px);
     }
   }
 
@@ -257,7 +288,11 @@ export const weddingDate = css`
   position: relative;
   width: fit-content;
   flex: 1;
-  height: 15px;
+  height: 20px;
+
+  @media (width <= 400px) {
+    font-size: 15px;
+  }
 
   .exact-date {
     position: absolute;

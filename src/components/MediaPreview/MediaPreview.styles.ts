@@ -18,6 +18,10 @@ export const mediaPreview = (focused: boolean) => css`
     width: 100%;
   }
 
+  video {
+    max-height: 80dvh;
+  }
+
   .close-button {
     align-self: flex-end;
     background-color: transparent;

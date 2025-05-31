@@ -6,22 +6,7 @@ export const BackgroundMusic = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
   const { media } = useMediaPreviewContext();
 
-  const onFirstClick = () => {
-    if (!audioRef.current) return;
-
-    audioRef.current.volume = 0.25;
-    audioRef.current?.play();
-    document.body.removeEventListener('click', onFirstClick);
-  };
-
-  useEffect(() => {
-    document.body.addEventListener('click', onFirstClick);
-    return () => {
-      document.body.removeEventListener('click', onFirstClick);
-    };
-  }, []);
-
-  useEffect(() => {
+  const playBasedOnMediaAvailability = () => {
     const audio = audioRef.current;
     if (!audio) return;
 
@@ -39,6 +24,25 @@ export const BackgroundMusic = () => {
       audio.pause();
       return;
     }
+  }
+
+  const handleFirstClick = () => {
+    if (!audioRef.current) return;
+
+    audioRef.current.volume = 0.25;
+    playBasedOnMediaAvailability();
+    document.body.removeEventListener('click', handleFirstClick);
+  };
+
+  useEffect(() => {
+    document.body.addEventListener('click', handleFirstClick);
+    return () => {
+      document.body.removeEventListener('click', handleFirstClick);
+    };
+  }, []);
+
+  useEffect(() => {
+    playBasedOnMediaAvailability();
   }, [media])
 
   return (

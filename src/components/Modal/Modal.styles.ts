@@ -40,6 +40,7 @@ export const modal = (display: boolean) => css`
 
   position: absolute;
   width: 100dvw;
+  max-width: 500px;
   height: 100dvh;
   display: ${display ? 'flex' : 'none'};
   justify-content: center;
@@ -68,6 +69,7 @@ export const modal = (display: boolean) => css`
     position: absolute;
     background-color: rgba(0,0,0, 0.6);
     width: 100dvw;
+    max-width: 500px;
     height: 100dvh;
     top: 0;
   }
@@ -78,6 +80,7 @@ export const modal = (display: boolean) => css`
     border: 1px solid #333;
     box-shadow: 0 0 8px 4px #00000066;
     width: 85dvw;
+    max-width: 460px;
     position: relative;
     z-index: 10;
 

@@ -1,0 +1,349 @@
+[
+  {
+    "kind": "hero",
+    "payload": {
+      "bgKey": "hero",
+      "eyebrow": "our first year",
+      "title": { "before": "Deta ", "em": "&", "after": " Rika" },
+      "badge": "One Year Together",
+      "dateRange": "15 June 2025 — 15 June 2026",
+      "scrollCue": "scroll the story",
+      "scrollTarget": "#wedding"
+    }
+  },
+  {
+    "kind": "moment",
+    "payload": {
+      "bgKey": "wedding",
+      "orientation": "right",
+      "windowTitle": "Chapter 1, The Wedding Day",
+      "photoTitle": "Chapter 1",
+      "heading": { "before": "The ", "em": "wedding", "after": " day." },
+      "date": "15 June 2025",
+      "body": [
+        "The morning was so blue it looked photoshopped. You wore that smile that's only yours, and I almost forgot every word I'd practiced.",
+        "Then I said your name and my name, in front of everyone, along with the wedding rings, and the vows, and the tears.",
+        "We are married.",
+        "Depending on which book, this moment is either the beginning of a story or the end of a chapter. A significant day, either way. And it was ours."
+      ],
+      "photoLabel": "drop your wedding photo here",
+      "images": [
+        "/moment-wedding-1.jpg",
+        "/moment-wedding-2.jpg",
+        "/moment-wedding-3.jpg",
+        "/moment-wedding-4.jpg"
+      ]
+    }
+  },
+  {
+    "kind": "moment",
+    "payload": {
+      "bgKey": "kalianda",
+      "orientation": "left",
+      "windowTitle": "Chapter 2, Kalianda Beach",
+      "photoTitle": "Chapter 2",
+      "heading": { "before": "Off the ", "em": "map.", "after": "" },
+      "date": "June 2025, After the Wedding",
+      "body": [
+        "We rode into somewhere salty and slow. Mornings that started at noon. The rocky trip it was, but the view was worth it. And the food, and the sunsets, and the quiet.",
+        "You burried me in sand, and we laughed until a wave came and ruined the mound. We play in the shore until our fingers were pruney, and then we swam some more.",
+        "It was not the best hotel, but it was spacious and had a ping pong table. And we will not forget how delicious the seafood was!"
+      ],
+      "photoLabel": "drop a honeymoon photo here",
+      "images": [
+        "/moment-lampung-kalianda-1.jpeg",
+        "/moment-lampung-kalianda-2.jpeg"
+      ]
+    }
+  },
+  {
+    "kind": "moment",
+    "payload": {
+      "bgKey": "mountains",
+      "orientation": "right",
+      "windowTitle": "Chapter 3, Bandung Mountains",
+      "photoTitle": "Chapter 3",
+      "heading": { "before": "Into the ", "em": "mountains.", "after": "" },
+      "date": "June 2025, Again",
+      "body": [
+        "We rode up until the city noise gave way to pine trees and the kind of cold that made you steal my jacket without asking.",
+        "The air was thin, the roads were winding, and the view was worth every dizzy turn. There we land on our beautiful hotel.",
+        "There was a hot tub, a cold pool, and an adventure to Lembang. We almost got no ride back, but we laughed it off and made it back to the hotel just in time for dinner.",
+        "The worst part was it only lasted a few days. The best part was every second of it."
+      ],
+      "photoLabel": "drop a mountain photo here",
+      "images": [
+        "/moment-bandung-honeymoon-1.jpeg",
+        "/moment-bandung-honeymoon-2.jpeg",
+        "/moment-bandung-honeymoon-3.mp4"
+      ]
+    }
+  },
+  {
+    "kind": "moment",
+    "payload": {
+      "bgKey": "jakarta",
+      "orientation": "left",
+      "windowTitle": "Chapter 4, Fun at Jakarta",
+      "photoTitle": "Chapter 4",
+      "heading": { "before": "A ", "em": "Jakarta", "after": " kind of day." },
+      "date": "June 2025, Yet Again",
+      "body": [
+        "We woke up early for Car Free Day, when the whole street gives up on cars and lets people have it instead. We walked down roads we usually only know as traffic.",
+        "Then we spent the rest of the day at the Jakarta Aquarium, pointing at every tank like we hadn't seen fish before. Also they had a capybara for some reason."
+      ],
+      "photoLabel": "drop a Jakarta photo here",
+      "images": [
+        "/moment-jakarta-cfd.jpeg",
+        "/moment-jakarta-aquarium-1.jpeg",
+        "/moment-jakarta-aquarium-2.jpeg"
+      ]
+    }
+  },
+  {
+    "kind": "moment",
+    "payload": {
+      "bgKey": "family",
+      "orientation": "right",
+      "windowTitle": "Chapter 5, Second Reception at Bandung",
+      "photoTitle": "Chapter 5",
+      "heading": { "before": "The ", "em": "second", "after": " hello." },
+      "date": "September 2025 · Round Two",
+      "body": [
+        "No vows this time, just a modest celebration with my extended family, everyone crowded together and happy to finally meet you.",
+        "After that we drove back up to Lembang, this time with your family in tow. It was tiring, but the cool air made every bit of it worth it.",
+        "I noticed that you were so excited over flowers, something I never really understood before."
+      ],
+      "photoLabel": "drop a reception photo here",
+      "images": [
+        "/moment-bandung-cimekar.jpeg",
+        "/moment-bandung-ngunduh-mantu.jpeg",
+        "/moment-bandung-tangkubanparahu.jpeg",
+        "/moment-bandung-lembang-orchard.mp4"
+      ]
+    }
+  },
+  {
+    "kind": "moment",
+    "payload": {
+      "bgKey": "belitung",
+      "orientation": "left",
+      "windowTitle": "Chapter 6, Belitung Adventure",
+      "photoTitle": "Chapter 6",
+      "heading": { "before": "Granite ", "em": "islands,", "after": " turquoise water." },
+      "date": "October 2025 · Beach Days",
+      "body": [
+        "We stayed at a beachside hotel, then rode a motorcycle out to a beautiful stretch of white sand beach, eating more seafood than we probably should have.",
+        "We spent a day island-hopping between the rocks and snorkeling in the clear water. Challenging, as neither of us are good swimmers, but we made it work.",
+        "The ride back caught us in a storm, and you came down with a heavy fever not long after. You recovered soon enough, but not soon enough to join me in the pool the next day.",
+        "Until this day, it was one of the most beautiful places I've ever been. I hope we can go back someday, and maybe next time we explore more of the islands and less of the hotel."
+      ],
+      "photoLabel": "drop a Belitung photo here",
+      "images": [
+        "/moment-belitung-beach-1.jpeg",
+        "/moment-belitung-beach-2.jpeg",
+        "/moment-belitung-beach-3.jpeg",
+        "/moment-belitung-beach-4.jpeg"
+      ]
+    }
+  },
+  {
+    "kind": "moment",
+    "payload": {
+      "bgKey": "johor-singapore",
+      "orientation": "right",
+      "windowTitle": "Chapter 7, Malaysia and Singapore",
+      "photoTitle": "Chapter 7",
+      "heading": { "before": "Two ", "em": "countries,", "after": " one long weekend." },
+      "date": "December 2025 · Border Hopping",
+      "body": [
+        "We started in Desaru, staying at a very nice hotel and waking up to a beautiful morning beach right outside.",
+        "Then we moved to Johor Bahru, trading that for a much worse hotel in the heart of the city, and spent our time hunting down cheap snacks we could never find back home.",
+        "Crossing into Singapore, we walked your old campus, rode the MRT, and made our way through the Merlion, Gardens by the Bay, and the Muslim quarter until our legs gave out.",
+        "The city won me over completely, all those parks and public facilities and a kind of accessibility I hadn't seen before.",
+        "We made it back to our hotel in Malaysia past midnight, and only had a few hours of sleep before rushing to catch our flight home."
+      ],
+      "photoLabel": "drop a city-trip photo here",
+      "images": [
+        "/moment-malaysia-desaru-beach.jpeg",
+        "/moment-singapore-merlion.jpeg",
+        "/moment-singapore-sultan-mosque.jpeg"
+      ]
+    }
+  },
+  {
+    "kind": "moment",
+    "payload": {
+      "bgKey": "quiet",
+      "orientation": "left",
+      "windowTitle": "Chapter 8, Winding Down",
+      "photoTitle": "Chapter 8",
+      "heading": { "before": "A ", "em": "quiet", "after": " stretch." },
+      "date": "January 2026 · Slow Weeks",
+      "body": [
+        "Some weeks the adventure was just being in the same room. A movie we'd both seen, a beauty mask night, your feet on mine under the blanket while we waited for it to dry.",
+        "Somewhere in between we unpacked the laundry we'd been avoiding for days. I learned that the best part of marriage might actually be the boring parts. Especially with you.",
+        "We still only get two weeks together each month. Someday, we hope it's every day, in the same house, for good."
+      ],
+      "photoLabel": "drop a quiet-day photo here",
+      "images": [
+        "/moment-beauty-mask-night.jpeg"
+      ]
+    }
+  },
+  {
+    "kind": "moment",
+    "payload": {
+      "bgKey": "house",
+      "orientation": "right",
+      "windowTitle": "Chapter 9, Our First House",
+      "photoTitle": "Chapter 9",
+      "heading": { "before": "Our ", "em": "own", "after": " front door." },
+      "date": "January 2026 · New Home?",
+      "body": [
+        "The wish from before is finally taking shape, except the house is still under construction, walls half up and nothing move-in ready yet.",
+        "A few more months and it should be done. The amount we're spending on it has been genuinely suffocating, but we're going through with it anyway.",
+        "Someday soon, that same house, every day, for good. It's a good start."
+      ],
+      "photoLabel": "drop a new-house photo here",
+      "images": [
+        "/moment-palembang-house-construction.jpeg"
+      ]
+    }
+  },
+  {
+    "kind": "moment",
+    "payload": {
+      "bgKey": "peanut",
+      "orientation": "left",
+      "windowTitle": "Chapter 10, Little Peanut",
+      "photoTitle": "Chapter 10",
+      "heading": { "before": "A call, ", "em": "two lines", "after": "." },
+      "date": "February 2026 · The Call",
+      "body": [
+        "You called me in the middle of a meeting. I stumbled out of the room awkward and clumsy, phone still to my ear, not knowing what was waiting on the other end.",
+        "It was a test pack, two lines. I flew to Palembang within days to check with the obgyn, needing to be completely sure.",
+        "It was real. We're having a baby!"
+      ],
+      "photoLabel": "drop a two-lines photo here",
+      "images": [
+        "/moment-baby-two-lines.JPG",
+        "/moment-baby-in-a-womb.jpeg"
+      ]
+    }
+  },
+  {
+    "kind": "moment",
+    "payload": {
+      "bgKey": "eid",
+      "orientation": "right",
+      "windowTitle": "Chapter 11, Eid at Bandung",
+      "photoTitle": "Chapter 11",
+      "heading": { "before": "Her first ", "em": "mudik", "after": "." },
+      "date": "March 2026 · Eid al-Fitr",
+      "body": [
+        "The early weeks of pregnancy had been rough on you, but we pushed through for your very first mudik, all the way from Palembang to Bandung.",
+        "We finally brought you to Soreang to meet my grandma, and up to Bandung to visit Eyang too.",
+        "It was Eid al-Fitr, and between the ketupat and the open arms, everyone had the same wish: a healthy baby."
+      ],
+      "photoLabel": "drop an Eid photo here",
+      "images": [
+        "/moment-bandung-eid-salah.jpeg",
+        "/moment-bandung-eid-family-gathering.jpeg",
+        "/moment-bandung-dago-cafe.jpeg",
+        "/moment-bandung-steakhouse.jpeg",
+        "/moment-bandung-cinunuk.jpeg"
+      ]
+    }
+  },
+  {
+    "kind": "moment",
+    "payload": {
+      "bgKey": "rented-room",
+      "orientation": "left",
+      "windowTitle": "Chapter 12, Pregnancy Life",
+      "photoTitle": "Chapter 12",
+      "heading": { "before": "The ", "em": "hard", "after": " part." },
+      "date": "April 2026 · Rough Weeks",
+      "body": [
+        "We rented a room near your office, because your muscles ached almost every night, you got dizzy so easily, and the medicines never seemed to end.",
+        "I did everything I could to help, and it still felt like never enough. It was hard for both of us, in different ways."
+      ],
+      "photoLabel": "drop a rented-room photo here",
+      "images": [
+        "/moment-palembang-kosan.jpeg",
+        "/moment-palembang-pregnancy-massage.mp4"
+      ]
+    }
+  },
+  {
+    "kind": "moment",
+    "payload": {
+      "bgKey": "car",
+      "orientation": "right",
+      "windowTitle": "Chapter 13, Our First Car",
+      "photoTitle": "Chapter 13",
+      "heading": { "before": "Four wheels, ", "em": "finally", "after": " ours." },
+      "date": "April 2026 · New Car Smell",
+      "body": [
+        "No more haggling with ride-hailing apps or squeezing groceries onto a motorbike. Ours is a 2026 Veloz HEV.",
+        "We had to learn to drive from scratch, and we crashed several times before we got any better.",
+        "Her name is Dellory, the symbol of our love.",
+        "Someday, we will drive her all the way to Jakarta and Bandung."
+      ],
+      "photoLabel": "drop a new-car photo here",
+      "images": [
+        "/moment-palembang-new-car.mp4"
+      ]
+    }
+  },
+  {
+    "kind": "moment",
+    "payload": {
+      "bgKey": "yearone",
+      "orientation": "left",
+      "windowTitle": "Chapter 14, Our First Anniversary",
+      "photoTitle": "Chapter 14",
+      "heading": { "before": "Almost ", "em": "one", "after": " whole year." },
+      "date": "15 June 2026 · One Year On",
+      "body": [
+        "We started planning this day back when we could still see it from a distance. Now it's here, and it somehow snuck up on us anyway.",
+        "One year, one house, one new little life on the way, and you — still the best decision I never had to think twice about."
+      ],
+      "photoLabel": "drop an anniversary photo here",
+      "images": [
+        "/moment-palembang-arista-anniv.jpeg"
+      ]
+    }
+  },
+  {
+    "kind": "today",
+    "payload": {
+      "bgKey": "today",
+      "banner": "Today",
+      "title": { "before": "One whole year, ", "em": "my love.", "after": "" },
+      "letterTitle": "15 · 06 · 2026 — A Letter",
+      "letterBody": [
+        "If I had to write the whole year on the back of a napkin, it would say: *\"more, please.\"*",
+        "Thank you for the wedding, the road trips, the little baby, the movie nights, and the quiet Sundays in between. Thank you for being the person I get to come home to.",
+        "Happy first anniversary, Rika. Let's keep going!"
+      ],
+      "signature": { "lead": "Deta", "trailing": "15 · 06 · 2026", "trailingAsCaption": true }
+    }
+  },
+  {
+    "kind": "countdown",
+    "payload": {
+      "bgKey": "countdown",
+      "banner": "And Now",
+      "title": { "before": "To ", "em": "year two.", "after": "" },
+      "targetDate": "2027-06-15T00:00:00",
+      "daysLabel": "Days",
+      "hoursLabel": "Hours",
+      "minutesLabel": "Minutes",
+      "secondsLabel": "Seconds",
+      "signature": { "lead": "D", "trailing": "R", "trailingAsCaption": false },
+      "footNote": "made with love · open me again next year"
+    }
+  }
+]

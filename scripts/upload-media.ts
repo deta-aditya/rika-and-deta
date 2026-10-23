@@ -1,17 +1,19 @@
-// Uploads the media in public/ to the private R2 bucket.
-// Run: npm run upload-media   (reads credentials from .env.local)
+// Uploads the web-sized media in media-optimized/ to the private R2 bucket.
+// Run: npm run optimize-media, then npm run upload-media   (reads credentials from .env.local)
 
 import { readdir, readFile } from 'node:fs/promises'
 import { extname, join } from 'node:path'
 import { createR2Client, getObjectUrl, readR2Config } from '../api/_lib/r2.ts'
 
-const MEDIA_DIRECTORY = 'public'
-const MEDIA_PATTERN = /^(bg|moment)-.+\.(jpe?g|png|mp4)$/i
+const MEDIA_DIRECTORY = 'media-optimized'
+const MEDIA_PATTERN = /^(bg|moment)-.+\.(jpe?g|mp4)$/i
+
+// Browsers cache the object under its signed URL, so the file itself can be cached for good.
+const CACHE_CONTROL = 'private, max-age=31536000, immutable'
 
 const CONTENT_TYPES: Record<string, string> = {
   '.jpg': 'image/jpeg',
   '.jpeg': 'image/jpeg',
-  '.png': 'image/png',
   '.mp4': 'video/mp4',
 }
 
@@ -25,7 +27,7 @@ for (const fileName of fileNames) {
   const body = await readFile(join(MEDIA_DIRECTORY, fileName))
   const response = await client.fetch(getObjectUrl(config, key), {
     method: 'PUT',
-    headers: { 'Content-Type': CONTENT_TYPES[extname(key)] },
+    headers: { 'Content-Type': CONTENT_TYPES[extname(key)], 'Cache-Control': CACHE_CONTROL },
     body,
   })
 

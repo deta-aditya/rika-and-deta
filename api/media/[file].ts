@@ -4,8 +4,9 @@ import { hasValidSession } from '../_lib/session.js'
 // Keys are stored lowercase in R2, so the request is lowercased too.
 const SAFE_FILE_NAME = /^[a-z0-9][a-z0-9._-]*\.(jpe?g|png|mp4)$/
 
-// Shorter than the signed URL lifetime so a cached redirect never points at an expired URL.
-const REDIRECT_CACHE_SECONDS = 240
+// Must stay under one hour (the minimum remaining life of a signed URL) so a cached
+// redirect never points at an expired URL.
+const REDIRECT_CACHE_SECONDS = 3000
 
 const readFileName = (request: Request): string => {
   const lastSegment = new URL(request.url).pathname.split('/').pop() ?? ''

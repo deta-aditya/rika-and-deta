@@ -1,4 +1,4 @@
-import { createMediaUrl } from '../../units/media-url'
+import { createBgPath, createMediaUrl } from '../../units/media-url'
 import * as styles from './bg-layers-styles'
 
 type BgLayersProps = {
@@ -16,7 +16,7 @@ const isEdgeBlurKey = (key: string): key is keyof typeof EDGE_BLUR => key in EDG
 export const BgLayers = ({ activeBg, bgKeys }: BgLayersProps) => (
   <div css={styles.bgLayers} aria-hidden="true">
     {bgKeys.map(key => {
-      const backgroundImage = `url(${createMediaUrl(`/bg-${key}.jpg`)})`
+      const backgroundImage = `url(${createMediaUrl(createBgPath(key))})`
       return (
         <div key={key} css={[styles.bgLayer, activeBg === key && styles.bgLayerActive]}>
           {isEdgeBlurKey(key) ? (

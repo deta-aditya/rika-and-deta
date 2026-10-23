@@ -11,7 +11,16 @@ export type R2Config = {
 
 // --- Private ---
 
-const SIGNED_URL_SECONDS = 300
+// The signing time is rounded down to the hour, so every request within that hour gets the
+// identical signed URL. That keeps the browser cache valid between preloading and rendering.
+// The URL stays valid for at least one hour after any request in that window.
+const SIGNED_URL_SECONDS = 2 * 60 * 60
+const SIGNING_WINDOW_MS = 60 * 60 * 1000
+
+const getSigningDatetime = (): string => {
+  const windowStart = new Date(Math.floor(Date.now() / SIGNING_WINDOW_MS) * SIGNING_WINDOW_MS)
+  return windowStart.toISOString().replace(/[:-]|\.\d{3}/g, '')
+}
 
 const readEnv = (name: string): string => {
   const value = process.env[name]
@@ -44,7 +53,9 @@ export const createR2Client = (config: R2Config): AwsClient =>
 export const getSignedObjectUrl = async (config: R2Config, key: string): Promise<string> => {
   const url = createObjectUrl(config, key)
   url.searchParams.set('X-Amz-Expires', String(SIGNED_URL_SECONDS))
-  const signed = await createR2Client(config).sign(new Request(url), { aws: { signQuery: true } })
+  const signed = await createR2Client(config).sign(new Request(url), {
+    aws: { signQuery: true, datetime: getSigningDatetime() },
+  })
   return signed.url
 }
 

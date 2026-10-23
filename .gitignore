@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Private media lives in the R2 bucket, never in git (see scripts/upload-media.ts)
+public/bg-*
+public/moment-*
+Anniversary-standalone.html
+.vercel

@@ -2,12 +2,19 @@ import { css } from '@emotion/react'
 
 export const moment = css`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* minmax(0, 1fr) instead of 1fr: a plain 1fr is minmax(auto, 1fr), so a nowrap window title
+     would stretch the column past the viewport. */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(24px, 4vw, 56px);
   align-items: center;
   max-width: 1180px;
   margin: 0 auto;
   width: 100%;
+
+  .moment-text,
+  .moment-photo {
+    min-width: 0;
+  }
 
   /* Keep the photo frame from filling the column edge-to-edge so it
      breathes within the section instead of touching its bounds. */
@@ -18,7 +25,7 @@ export const moment = css`
   }
 
   @media (max-width: 820px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 24px;
 
     .moment-text { order: 1; }

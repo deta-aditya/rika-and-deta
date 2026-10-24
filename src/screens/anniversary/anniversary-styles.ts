@@ -43,6 +43,12 @@ export const annivSection = css`
   text-align: center;
   flex-direction: column;
 
+  /* Without a definite width, a flex-column child sizes to its content, and a nowrap window
+     title would push it past the viewport on narrow phones. Children stay centered via text-align. */
+  > * {
+    width: 100%;
+  }
+
   .banner {
     font-size: 11px;
     font-weight: 600;

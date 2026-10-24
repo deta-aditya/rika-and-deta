@@ -12,8 +12,8 @@ type SlideshowProps = {
 
 export const Slideshow = ({ images, label }: SlideshowProps) => {
   const slides = images.map(createSlideMedia)
-  const { activeIndex, next, prev } = useSlideshow(slides)
-  const { ref, isInView } = useIsInView()
+  const { activeIndex, isNearActive, next, prev } = useSlideshow(slides)
+  const { ref, isInView, isNearView } = useIsInView()
 
   if (slides.length === 0) {
     return <PhotoSlot label={label} />
@@ -26,6 +26,8 @@ export const Slideshow = ({ images, label }: SlideshowProps) => {
     <div ref={ref} css={styles.slideshow}>
       <div css={styles.viewport}>
         {slides.map((media, index) => {
+          if (!isNearView || !isNearActive(index)) return null
+
           const isShown = index === activeIndex
           return SlideMedias.match(media, {
             image: ({ src }) => (

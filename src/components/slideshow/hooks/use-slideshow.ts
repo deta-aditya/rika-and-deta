@@ -19,8 +19,15 @@ export const useSlideshow = (slides: SlideMedia[]) => {
     return () => clearTimeout(id)
   }, [activeIndex, slideCount, isActiveVideo])
 
+  // Only the active slide and its neighbours stay mounted, so a slideshow never holds every
+  // photo decoded at once.
+  const isNearActive = (index: number) => {
+    const distance = Math.abs(index - activeIndex)
+    return Math.min(distance, slideCount - distance) <= 1
+  }
+
   const next = () => setActiveIndex(current => (current + 1) % slideCount)
   const prev = () => setActiveIndex(current => (current - 1 + slideCount) % slideCount)
 
-  return { activeIndex, next, prev }
+  return { activeIndex, isNearActive, next, prev }
 }

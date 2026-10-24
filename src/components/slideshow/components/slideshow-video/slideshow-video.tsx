@@ -20,7 +20,7 @@ export const SlideshowVideo = ({ src, label, isShown, isPlaying, isLooping, onEn
       aria-label={label}
       muted
       playsInline
-      preload="auto"
+      preload={isShown ? 'auto' : 'metadata'}
       loop={isLooping}
       onEnded={onEnded}
       css={[styles.video, isShown && styles.videoShown]}

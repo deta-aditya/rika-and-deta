@@ -29,3 +29,12 @@ export const collectMediaPaths = (sections: Section[]): string[] => {
   )
   return [...new Set([...backgroundPaths, ...momentPaths])]
 }
+
+// Only the active background and its neighbours need to exist: sections are read in order, so the
+// neighbours are the next ones to fade in or out. Mounting every background keeps a full-screen
+// blurred GPU layer alive for each of them, which exhausts memory on phones.
+export const collectNearbyBgKeys = (sections: Section[], activeBg: string): string[] => {
+  const bgKeys = collectBgKeys(sections)
+  const activeIndex = bgKeys.indexOf(activeBg)
+  return bgKeys.filter((_, index) => Math.abs(index - activeIndex) <= 1)
+}
